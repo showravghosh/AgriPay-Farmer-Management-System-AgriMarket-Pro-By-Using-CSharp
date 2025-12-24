@@ -1,0 +1,589 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E7545807-CCD5-447D-9569-8ACD958E5EB0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Admin</RootNamespace>
+    <AssemblyName>Admin</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu.UI.WinForms.1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.1.5.3.2.0.0\lib\net452\Bunifu.UI.WinForms.1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="CuoreUI, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\CuoreUI.Winforms.2025.1.12.1\lib\netstandard2.0\CuoreUI.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bkash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bkash.Designer.cs">
+      <DependentUpon>Bkash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BracBank.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BracBank.Designer.cs">
+      <DependentUpon>BracBank.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CityBank.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CityBank.Designer.cs">
+      <DependentUpon>CityBank.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteAdmin.Designer.cs">
+      <DependentUpon>DeleteAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeletedEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeletedEmployee.Designer.cs">
+      <DependentUpon>DeletedEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeletedFarmer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeletedFarmer.Designer.cs">
+      <DependentUpon>DeletedFarmer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteUser.Designer.cs">
+      <DependentUpon>DeleteUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeList.Designer.cs">
+      <DependentUpon>EmployeeList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminList.Designer.cs">
+      <DependentUpon>AdminList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminReg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminReg.Designer.cs">
+      <DependentUpon>AdminReg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FarmerFish.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FarmerFish.Designer.cs">
+      <DependentUpon>FarmerFish.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FarmerFruit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FarmerFruit.Designer.cs">
+      <DependentUpon>FarmerFruit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FarmerHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FarmerHome.Designer.cs">
+      <DependentUpon>FarmerHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FarmerList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FarmerList.Designer.cs">
+      <DependentUpon>FarmerList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FarmerVegetable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FarmerVegetable.Designer.cs">
+      <DependentUpon>FarmerVegetable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nagad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nagad.Designer.cs">
+      <DependentUpon>Nagad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Paid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Paid.Designer.cs">
+      <DependentUpon>Paid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductsList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductsList.Designer.cs">
+      <DependentUpon>ProductsList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rocket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rocket.Designer.cs">
+      <DependentUpon>Rocket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UnPaid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnPaid.Designer.cs">
+      <DependentUpon>UnPaid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserFish.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserFish.Designer.cs">
+      <DependentUpon>UserFish.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserFruit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserFruit.Designer.cs">
+      <DependentUpon>UserFruit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserHome.Designer.cs">
+      <DependentUpon>UserHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserList.Designer.cs">
+      <DependentUpon>UserList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Registration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registration.Designer.cs">
+      <DependentUpon>Registration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserPaid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserPaid.Designer.cs">
+      <DependentUpon>UserPaid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserPayHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserPayHome.Designer.cs">
+      <DependentUpon>UserPayHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserVegetable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserVegetable.Designer.cs">
+      <DependentUpon>UserVegetable.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bkash.resx">
+      <DependentUpon>Bkash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BracBank.resx">
+      <DependentUpon>BracBank.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CityBank.resx">
+      <DependentUpon>CityBank.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteAdmin.resx">
+      <DependentUpon>DeleteAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeletedEmployee.resx">
+      <DependentUpon>DeletedEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeletedFarmer.resx">
+      <DependentUpon>DeletedFarmer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteUser.resx">
+      <DependentUpon>DeleteUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeList.resx">
+      <DependentUpon>EmployeeList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminList.resx">
+      <DependentUpon>AdminList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminReg.resx">
+      <DependentUpon>AdminReg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FarmerFish.resx">
+      <DependentUpon>FarmerFish.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FarmerFruit.resx">
+      <DependentUpon>FarmerFruit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FarmerHome.resx">
+      <DependentUpon>FarmerHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FarmerList.resx">
+      <DependentUpon>FarmerList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FarmerVegetable.resx">
+      <DependentUpon>FarmerVegetable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nagad.resx">
+      <DependentUpon>Nagad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Paid.resx">
+      <DependentUpon>Paid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductsList.resx">
+      <DependentUpon>ProductsList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rocket.resx">
+      <DependentUpon>Rocket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnPaid.resx">
+      <DependentUpon>UnPaid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserFish.resx">
+      <DependentUpon>UserFish.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserFruit.resx">
+      <DependentUpon>UserFruit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserHome.resx">
+      <DependentUpon>UserHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserList.resx">
+      <DependentUpon>UserList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Registration.resx">
+      <DependentUpon>Registration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserPaid.resx">
+      <DependentUpon>UserPaid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserPayHome.resx">
+      <DependentUpon>UserPayHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserVegetable.resx">
+      <DependentUpon>UserVegetable.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12354.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-clipart-button-back-s-blue-text.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\912267.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3458714.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\balanced-diet-food-background-selection-260nw-1407741008-ezgif.com-webp-to-jpg-converter.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\393896-windows-11-microsoft-background-abstract-4k-pc.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\123.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1231.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\color-desktop-wallpaper-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\High_resolution_wallpaper_background_ID_77700366520-ezgif.com-webp-to-jpg-converter.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agricultural-technologies-for-growing-plants-and-scientific-research-in-the-field-of-biology-and-chemistry-of-nature-living-green-sprout-in-the-hands-of-a-farmer-generate-a.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-minan1398-913416.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aesthetic-one-color-bqe5x9p4y71zy23v.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\486067.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled design.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\About.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\About1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\concept-processing-cultivation-agricultural-field-with-automated-artificial-intelligence-technologies-future-agriculture_542466-4058.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\56432.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6857.jpg_wh1200.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\premium18.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\248925.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %281%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login-concept-illustration_114360-739.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1336.png_860.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-admin-and-customer-service-job-vacancies-png-image_9041264.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Admin-Profile-Transparent-PNG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3456426.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1701541755bkash-logo-png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nagad-Logo.wine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dutch-bangla-rocket-logo-png_seeklogo-317692.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\city-bank-bangladesh-logo-A5D4E35B96-seeklogo.com.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Brac-Bank-Logo-Vector.svg-.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1-black-wallpaper-pattern.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Admin 1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\High_resolution_wallpaper_background_ID_77700366520-ezgif.com-webp-to-jpg-converter1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plain-smooth-green-wall-texture_53876-129746.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket-logo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2489251.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nagad-Logo.wine1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2489252.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\premium181.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2489253.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2489254.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\city-bank-bangladesh-logo-A5D4E35B96-seeklogo.com1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\city-bank-bangladesh-logo-A5D4E35B96-seeklogo.com2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\city-bank-bangladesh-logo-A5D4E35B96-seeklogo.com3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2489255.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Brac-Bank-Logo-Vector.svg-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1701541755bkash-logo-png1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1232.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\325038.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\485685.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\remove_admin.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2807980.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3250381.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4856851.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1233.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aesthetic-one-color-bqe5x9p4y71zy23v1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1234.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\536113.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4856852.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1676260801782.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2025-02-04 at 1.15.01 PM.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2025-02-04 at 1.15.20 PM.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2025-02-04 at 1.15.01 PM %281%29.jpeg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
